@@ -1,0 +1,106 @@
+﻿@model DAS.Models.DocumentModels1
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DocumentModels1</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cips)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cips)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.citizenship)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.citizenship)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.passport)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.passport)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.crimerecord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.crimerecord)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.surName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.surName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.identityNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.identityNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.streetAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.streetAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.city)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.city)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cantoon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cantoon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.zipCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.zipCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

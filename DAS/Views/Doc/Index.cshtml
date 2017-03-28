@@ -1,0 +1,93 @@
+﻿@model IEnumerable<DAS.Models.DocumentModels1>
+
+@{
+    ViewBag.Title = "List of requests";
+}
+
+<h2>Submited document applications</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cips)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.citizenship)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.passport)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.crimerecord)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.identityNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.streetAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.city)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cantoon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.zipCode)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.cips)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.citizenship)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.passport)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.crimerecord)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.identityNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.streetAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.city)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cantoon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.zipCode)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
