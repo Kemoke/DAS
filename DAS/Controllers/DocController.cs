@@ -14,6 +14,11 @@ namespace DAS.Controllers
     {
         private MyDbContext1 db = new MyDbContext1();
 
+        // Display a success message after successful request
+        public ActionResult Success()
+        {
+            return View();
+        }
         // GET: Doc
         public ActionResult Index()
         {
@@ -52,7 +57,7 @@ namespace DAS.Controllers
             {
                 db.documents.Add(documentModels1);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Success");
             }
 
             return View(documentModels1);
