@@ -6,6 +6,7 @@ using System.Data.Entity;
 
 namespace DAS.Models
 {
+    // A class to expose data entities and to create the database if one does not exist
     public class MyDbContext1 : DbContext
     {
         public MyDbContext1() : base("DocumentSysAppDatabase")
