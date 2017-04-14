@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
+// A Model class representing data models for the database, views and controllers
+// Data annotations before each variable is used to dynamicly display it the way we want in the views instead of using static HTML
 namespace DAS.Models
 {
     public class DocumentModels1

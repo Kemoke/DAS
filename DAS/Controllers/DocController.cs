@@ -8,10 +8,12 @@ using System.Web;
 using System.Web.Mvc;
 using DAS.Models;
 
+// A controller processing the data (post and get methods( writting to the database
 namespace DAS.Controllers
 {
     public class DocController : Controller
     {
+        // An object of database context class
         private MyDbContext1 db = new MyDbContext1();
 
         // Display a success message after successful request
@@ -53,10 +55,12 @@ namespace DAS.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "id,cips,citizenship,passport,crimerecord,name,surName,identityNo,streetAddress,city,cantoon,zipCode")] DocumentModels1 documentModels1)
         {
+            // Validate model
             if (ModelState.IsValid)
             {
                 db.documents.Add(documentModels1);
                 db.SaveChanges();
+                // After successful post
                 return RedirectToAction("Success");
             }
 
@@ -78,9 +82,7 @@ namespace DAS.Controllers
             return View(documentModels1);
         }
 
-        // POST: Doc/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Doc/Edit/5       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "id,cips,citizenship,passport,crimerecord,name,surName,identityNo,streetAddress,city,cantoon,zipCode")] DocumentModels1 documentModels1)
