@@ -1,8 +1,24 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h2>How to use DAS?</h2>
 
-<p>This project is being developed for the software engineering course.
-    The application is entirely built by Adin, Selma and Armin.</p>
+<div>
+    <p>
+        To use the Document Application System you must be an adult.
+        This implies that you are already registered as a regular citizen of your municipality.
+    </p>
+    <br />
+    <p>
+        First step is to visit your municipality office and make a request to use DAS. By doing this
+        you will get your unique identification number (different from ID number). It will serve as
+        identification key in your submitted forms, beside personal informations.
+    </p><br />
+    <p>
+        You are allowed to request a document for yourself and for your children, only if your children
+        are younger than 18, there are not adults.<br />You are not allowed to issue a document in behalf
+        of another person, neither close relatives nor complete stranger. However, the last statement is
+        not valid if you have a written permission given by that person.
+    </p>
+    <p class="btn btn-default">@Html.ActionLink("APPLY NOW", "Create", "Doc")</p>
+</div>

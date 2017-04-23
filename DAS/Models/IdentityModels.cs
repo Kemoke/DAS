@@ -29,5 +29,7 @@ namespace DAS.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<DAS.Models.ApplicationUser> ApplicationUsers { get; set; }
     }
 }
