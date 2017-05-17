@@ -5,7 +5,7 @@
 <div class="jumbotron">
     <h1>Document Application System</h1>
     <p class="lead">The Document Application System (DAS) is built as a project for the Software Engineering course. It helps people get their personal documents in a new modern way.</p>
-    <p class="btn btn-default">@Html.ActionLink("APPLY NOW", "Create", "Doc")</p>
+   <input type="button" value="APPLY NOW" class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("Create", "Doc")'" />
 </div>
 
 <div class="row">
@@ -16,18 +16,18 @@
             However, you are not sure how to use this web application,
             just click the button below to get more information about it.
         </p>
-        <p class="btn btn-default">@Html.ActionLink("Learn more", "About", "Home")</p>
+        <input type="button" value="Learn more" class="btn btn-default" onclick="location.href='@Url.Action("About", "Home")'" />
     </div>
     <div class="col-md-4">
         <h2>Who we are?</h2>
         <p>We are a small group of entusiastic student who are willing to improve our lives
         by focusing only on important things and ignoring those redandent tasks such as waiting in ques to get our documents.</p>
-       
-    </div>
+        @*ovo treba ukloniti*@<input type="button" value="Log in" class="btn btn-default" onclick="location.href='@Url.Action("Create", "Doc")'" />
+    </div>  
     <div class="col-md-4">
         <h2>Mobile Application!</h2>
         <p>Ever forgot to get some documents? Want your documents as soon as possible? No problem, you can use our iPhone app to apply for the document
         while drinking coffee, walking down the street or even traveling.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Get it on the AppStore &raquo;</a></p>
+          <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Get it on the AppStore &raquo;</a></p>
     </div>
 </div>
