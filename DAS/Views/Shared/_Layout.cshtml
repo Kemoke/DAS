@@ -25,7 +25,10 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Apply for document", "Create", "Doc")</li>
+                    
+                   @* <li>@Html.ActionLink("Admin", "Login", "Account")</li>*@
                 </ul>
+                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>

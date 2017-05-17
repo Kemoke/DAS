@@ -15,46 +15,50 @@
         <h4>Check the documents you want!</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.cips, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.cips)
-                    @Html.ValidationMessageFor(model => model.cips, "", new { @class = "text-danger" })
+
+        
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.cips, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="checkbox">
+                        @Html.EditorFor(model => model.cips)
+                        @Html.ValidationMessageFor(model => model.cips, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.citizenship, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="checkbox">
+                        @Html.EditorFor(model => model.citizenship)
+                        @Html.ValidationMessageFor(model => model.citizenship, "", new { @class = "text-danger" })
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.citizenship, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.citizenship)
-                    @Html.ValidationMessageFor(model => model.citizenship, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.passport, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="checkbox">
+                        @Html.EditorFor(model => model.passport)
+                        @Html.ValidationMessageFor(model => model.passport, "", new { @class = "text-danger" })
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.passport, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.passport)
-                    @Html.ValidationMessageFor(model => model.passport, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.crimerecord, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <div class="checkbox">
+                        @Html.EditorFor(model => model.crimerecord)
+                        @Html.ValidationMessageFor(model => model.crimerecord, "", new { @class = "text-danger" })
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.crimerecord, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.crimerecord)
-                    @Html.ValidationMessageFor(model => model.crimerecord, "", new { @class = "text-danger" })
-                </div>
-            </div>
-        </div>
-
+        
         <p style="font-size:x-large">Personal info:</p><br />
         <div class="form-group">
             @Html.LabelFor(model => model.name, htmlAttributes: new { @class = "control-label col-md-2" })
